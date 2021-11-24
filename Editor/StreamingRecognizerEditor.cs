@@ -31,7 +31,7 @@ namespace GoogleCloudStreamingSpeechToText {
                 microphoneIndex = 0;
             }
 
-            if (microphoneIndex < listener.Length) {
+            if (microphoneIndex < microphoneNames.Length) {
                 listener.microphoneName =
                     microphoneNames[EditorGUILayout.Popup("Microphone", microphoneIndex, microphoneNames)];
             }
