@@ -94,6 +94,12 @@ namespace GoogleCloudStreamingSpeechToText {
             return _listening;
         }
 
+        public bool CredentialsExist() {
+            string credentialsPath = Path.Combine(Application.streamingAssetsPath, CredentialFileName);
+            return File.Exists(credentialsPath);
+        }
+
+
         private void Restart() {
             if (!_initialized) {
                 return;
