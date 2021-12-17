@@ -35,8 +35,8 @@ namespace GoogleCloudStreamingSpeechToText {
         public bool startOnAwake = true;
         public bool returnInterimResults = true;
         public bool enableDebugLogging = false;
-        public UnityEvent onStartListening;
-        public UnityEvent onStopListening;
+        public UnityEvent onStartListening = new UnityEvent();
+        public UnityEvent onStopListening = new UnityEvent();
         public TranscriptionEvent onFinalResult = new TranscriptionEvent();
         public TranscriptionEvent onInterimResult = new TranscriptionEvent();
 
